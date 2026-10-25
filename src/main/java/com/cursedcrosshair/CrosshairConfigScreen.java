@@ -22,7 +22,6 @@ public class CrosshairConfigScreen extends Screen {
         int left = this.width / 2 - 100;
         int y = this.height / 4;
         addRenderableWidget(CycleButton.onOffBuilder(CrosshairConfig.ENABLED.get())
-            .withMessage(Component.literal("Cruceta"))
             .create(left, y, 200, 20, Component.literal("Cruceta"),
                 (button, value) -> CrosshairConfig.ENABLED.set(value)));
         y += 26;
@@ -48,7 +47,6 @@ public class CrosshairConfigScreen extends Screen {
             v -> CrosshairConfig.OFFSET_Y.set(v)));
         y += 26;
         addRenderableWidget(CycleButton.onOffBuilder(CrosshairConfig.GLOW.get())
-            .withMessage(Component.literal("Resplandor"))
             .create(left, y, 200, 20, Component.literal("Resplandor"),
                 (button, value) -> CrosshairConfig.GLOW.set(value)));
         addRenderableWidget(Button.builder(Component.literal("Volver"), b -> onClose())
