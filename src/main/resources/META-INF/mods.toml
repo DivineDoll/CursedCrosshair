@@ -1,0 +1,21 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+[[mods]]
+modId="cursedcrosshair"
+version="1.0.0"
+displayName="Cursed Crosshair"
+authors="CursedCrosshair"
+description='''Customizable crosshair with a Sukuna-inspired cursed-energy design.'''
+[[dependencies.cursedcrosshair]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="CLIENT"
+[[dependencies.cursedcrosshair]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1]"
+ordering="NONE"
+side="CLIENT"
